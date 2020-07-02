@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cera Pro' !important;
+}
+
+
+ .slick-slide {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    /* display: none; */
+  }
+
+  .slick-active {
+      opacity: 1;
+      /* display: block !important; */
+  }

@@ -1,0 +1,55 @@
+.Carousel {
+  margin: 2px 0 20px;
+  height: 400px;
+}
+
+.btn {
+  width: 30px;
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  outline: none;
+}
+.btnPrev {
+  top: 0;
+  right: 10%;
+}
+
+.btnNext {
+  top: 0;
+  left: 9%;
+}
+
+.btn:hover .nextArrow,
+.btn:hover .prevArrow {
+  fill: #dddddd;
+}
+
+.nextArrow {
+  fill: #fff;
+  transform: translate(180, 180);
+  transition: fill 0.25s ease-in;
+}
+
+.prevArrow {
+  fill: #fff;
+  transform: rotate(180deg);
+  transition: fill 0.25s ease-in;
+}
+
+.photo {
+  height: 400px;
+}
+
+.sliderText {
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  text-align: left;
+  top: 40%;
+  left: 13%;
+}

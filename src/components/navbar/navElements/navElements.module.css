@@ -1,0 +1,142 @@
+.nav__elements {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+  margin-left: 7px;
+}
+
+.nav__el {
+  padding: 17px 9px;
+  margin-right: 5px;
+  position: relative;
+}
+
+.nav_el__img {
+  padding-right: 15px;
+}
+
+.nav__el:hover {
+  background-color: #ecf0f4;
+  cursor: pointer;
+}
+
+.nav_el__link {
+  text-decoration: none;
+  display: flex;
+  align-content: center;
+  height: 20px;
+}
+
+.nav_el__link_text {
+  color: #0b2546;
+  font-size: 14px;
+}
+
+.compare__count {
+  background-color: #f42c48;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  top: 12%;
+  left: 20%;
+}
+
+/*  DROPWDOWNS */
+
+.compareDropdown {
+  /* position: absolute; */
+}
+.nav__el:hover .compareDropdownList {
+  display: flex;
+}
+
+.compareDropdownList {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  width: 240px;
+  background-color: #fff;
+  z-index: 3;
+  top: 100%;
+  left: 0%;
+  transition: all 2s ease-in;
+}
+
+.compareDropdownList>li:last-child:hover {
+    background-color: #fff;
+}
+
+.compareDropdownListItem {
+  align-items: center;
+  display: flex;
+  padding: 5px;
+  padding-right: 0;
+  padding-bottom: 0;
+  /* cursor: context-menu; */
+}
+
+.compareDropdownListItem:hover {
+    background-color: #ecf0f4;
+}
+
+.compareDropdownListItem:hover .delBtn {
+    display: flex;
+}
+
+.compareBlock {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(223, 228, 234);
+   
+}
+
+.compareText {
+    padding: 7px;
+}
+
+.comparingProductName {
+    max-width: 150px;
+}
+
+.comparingProductPrice {
+  font-size: 14px;
+  color: #07108f;
+}
+
+.delBtn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+  padding-right: 10px;
+  transition: display 0.2s ease-in-out;
+  
+}
+
+.compareBtn {
+    background-color: #0042ff;
+    color: #fff;
+    font-weight: bold;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 18px;
+    display: block;
+    cursor: pointer;
+    margin: 10px;
+    margin-left: 5px;  
+    width: 100%;
+}
+
+.compareBtn:hover {
+        box-shadow: 0px 3px 9px 0px rgba(0, 66, 255, 0.004);
+}

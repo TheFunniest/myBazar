@@ -1,0 +1,66 @@
+.nav__info {
+    min-height: 40px;
+    background-color: rgb(246, 247, 249);
+    display: flex;
+    align-items: center;
+}
+
+.nav__info_text{
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+}
+
+.contact__info {
+    font-size: 13px;
+    font-weight: 500;
+
+}
+
+.contact__phone{
+    position: relative;
+    margin-right: 13px;
+}
+
+
+.contact__phone::after {
+    content: '●';
+    font-size: 7px;
+    color: #0042ff;
+    position: absolute;
+    top: 5px;
+    right: -9px;
+}
+
+.sale{
+    text-align: center;
+    color: #0042ff;
+}
+
+.sale_type {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.mail__info {
+    font-weight: normal;
+}
+
+
+
+.change__lang{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.change__lang>li {
+    list-style: none;
+}
+
+.change__lang>li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.active_lang {
+    color: #d1d8e0 !important;
+}

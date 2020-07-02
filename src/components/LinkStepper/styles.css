@@ -1,0 +1,28 @@
+.stepper__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.stepper__anchor {
+  text-decoration: none;
+  font-size: 12px;
+  color: #000000;
+  padding: 6px;
+}
+
+/* .stepper__anchor {
+    padding: 10px 10px 10px 0;
+} */
+
+.stepper__link::after {
+  content: "●";
+  font-size: 6px;
+  color: #0042ff;
+  position: relative;
+  top: -1px;
+}
+
+.stepper__link:nth-last-of-type(1)::after {
+  display: none;
+}

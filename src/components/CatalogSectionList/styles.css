@@ -1,0 +1,20 @@
+.product__type {
+    background-color: #f1f2f6;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.type__product{
+    padding-top: 13px;
+    padding-bottom: 15px;
+    color: #07108f;
+    font-size: 1.5rem;
+}
+
+
+.main__content {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    column-gap: 15px;
+}
+
