@@ -1,0 +1,81 @@
+.adv__img {
+  width: 100%;
+  margin: 20px 0;
+  /* background-size: ; */
+}
+
+.billboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin: 20px 10px;
+}
+
+.billboard_item > img {
+  width: 100%;
+}
+
+.billboard_item {
+  position: relative;
+}
+
+.billboard_item__text {
+  position: absolute;
+}
+
+.billboard_item__text > p {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.billboard_item__text span {
+    display: block;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.billboard_item__btn {
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 45px;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+.position1 {
+  top: 20%;
+  left: 10%;
+}
+
+.btn1 {
+  padding: 8px 24px 10px;
+  color: rgb(99, 124, 240);
+  background-color: rgb(255, 198, 33);
+}
+
+.position2 {
+  right: 10%;
+  top: 25%;
+}
+
+.btn2 {
+  padding: 8px 17px 10px;
+  color: rgb(7, 16, 143);
+  background-color: rgb(255, 216, 33);
+}
+
+.position3 {
+    top: 35%;
+    right: 6%;
+}
+
+.btn3 {
+  padding: 8px 17px 10px;
+  color: #fbca0c;
+  background-color: rgb(192, 17, 202);
+  
+}

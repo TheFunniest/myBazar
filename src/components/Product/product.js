@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./product.module.css";
 import Container from "@material-ui/core/Container";
 import Slider from "react-slick";
@@ -10,10 +10,10 @@ import SectionName from "../SectionName/sectionName";
 import ProductInfo from "../Home/ProductInfo/productInfo";
 
 // IMAGES
-import Lego from "../../assets/images/lego.png";
-import samsung from "../../assets/images/samsung51.png";
-import dress from "../../assets/images/dress.png";
-import watch from "../../assets/images/watch.png";
+import Tv from "../../assets/images//newProducts/newTV.jpg";
+import Washer from "../../assets/images//newProducts/washer.jpg";
+import Boots from "../../assets/images//newProducts/boots.jpg";
+import Pampers from "../../assets/images//newProducts/pampers.jpg";
 
 const Product = ({ title }) => {
   function SampleNextArrow(props) {
@@ -43,11 +43,12 @@ const Product = ({ title }) => {
     slidesToScroll: 1,
     dots: false,
     infinite: false,
+    swipe: false,
     // autoplay: true,
     // autoplaySpeed: 4000,
     speed: 1000,
     onSwipe: () => {
-      console.log(12)
+      console.log(12);
     },
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -56,22 +57,18 @@ const Product = ({ title }) => {
     <>
       <SectionName title={title} />
       <Container>
-        <Slider
-          slickPlay
-          {...settings}
-          className={styles.carousel}
-        >
+        <div className={styles.products}>
           <div className={styles.product}>
             <div className={styles.productImg}>
               <span className={styles.new}>новинка</span>
-              <img src={Lego} alt="lego" />
+              <img src={Tv} alt="Tv" />
             </div>
             <ProductInfo
-              name="LEGO Ninjago Movie 70620, 5041 дет."
+              name="Телевизор Samsung UE43RU7200U"
               comments={250}
               price="1 200 000"
-              category="Конструкторы"
-              producer="ООО “Ninja Lego”"
+              category="Телевизоры"
+              producer="ООО “Malika Savdo”"
               classes={{
                 Rate: "Rating",
                 stars: "stars",
@@ -82,14 +79,15 @@ const Product = ({ title }) => {
           </div>
           <div className={styles.product}>
             <div className={styles.productImg}>
-              <img src={samsung} alt="samsung" />
+              <span className={styles.new}>новинка</span>
+              <img src={Washer} alt="Washer" />
             </div>
             <ProductInfo
-              name="Samsung Galaxy A51 64GB Black (SM-A515F)"
+              name="Стиральная машина узкая Hotpoint-Ariston RST 6029 ST S RU"
               comments={123}
               price="2 345 789"
-              category="Смартфон"
-              producer="ООО “Samsung Electronics”"
+              category="Стиральные машины"
+              producer="ООО “Hotpoint Uzbekistan”"
               classes={{
                 Rate: "Rating",
                 stars: "stars",
@@ -100,15 +98,16 @@ const Product = ({ title }) => {
           </div>
           <div className={styles.product}>
             <div className={styles.productImg}>
-              <img src={watch} alt="watch" />
+              <span className={styles.new}>новинка</span>
+              <img src={Boots} alt="Boots" />
             </div>
             <ProductInfo
-              name="GUANQIN 2018, светящиеся, кожаный, черный"
+              name="MVVT Brown Men's Snow Boots 2020 winter"
               comments={250}
               price="176 540"
               sale="255 790"
-              category="Конструкторы"
-              producer="ООО “Ninja Lego”"
+              category="Мужская обувь"
+              producer="Zeda Casual Clothing"
               classes={{
                 Rate: "Rating",
                 stars: "stars",
@@ -119,14 +118,14 @@ const Product = ({ title }) => {
           </div>
           <div className={styles.product}>
             <div className={styles.productImg}>
-              <img src={dress} alt="dress" />
+              <img src={Pampers} alt="Pampers" />
             </div>
             <ProductInfo
-              name="LEGO Ninjago Movie 70620, 5041 дет."
+              name="Pampers подгузники Premium Care 2 (4-8 кг) 66 шт."
               comments={250}
               price="1 200 000"
-              category="Конструкторы"
-              producer="ООО “Ninja Lego”"
+              category="Детские подгузники"
+              producer="BabyМаркет"
               classes={{
                 Rate: "Rating",
                 stars: "stars",
@@ -135,61 +134,7 @@ const Product = ({ title }) => {
               }}
             />
           </div>
-          <div className={styles.product}>
-            <div className={styles.productImg}>
-              <img src={dress} alt="dress" />
-            </div>
-            <ProductInfo
-              name="LEGO Ninjago Movie 70620, 5041 дет."
-              comments={250}
-              price="1 200 000"
-              category="Конструкторы"
-              producer="ООО “Ninja Lego”"
-              classes={{
-                Rate: "Rating",
-                stars: "stars",
-                icons: "iconsStandart",
-                productInfo: "productInfoStandart",
-              }}
-            />
-          </div>
-          <div className={styles.product}>
-            <div className={styles.productImg}>
-              <img src={dress} alt="dress" />
-            </div>
-            <ProductInfo
-              name="LEGO Ninjago Movie 70620, 5041 дет."
-              comments={250}
-              price="1 200 000"
-              category="Конструкторы"
-              producer="ООО “Ninja Lego”"
-              classes={{
-                Rate: "Rating",
-                stars: "stars",
-                icons: "iconsStandart",
-                productInfo: "productInfoStandart",
-              }}
-            />
-          </div>
-          <div className={styles.product}>
-            <div className={styles.productImg}>
-              <img src={dress} alt="dress" />
-            </div>
-            <ProductInfo
-              name="LEGO Ninjago Movie 70620, 5041 дет."
-              comments={250}
-              price="1 200 000"
-              category="Конструкторы"
-              producer="ООО “Ninja Lego”"
-              classes={{
-                Rate: "Rating",
-                stars: "stars",
-                icons: "iconsStandart",
-                productInfo: "productInfoStandart",
-              }}
-            />
-          </div>
-        </Slider>
+        </div>
       </Container>
     </>
   );

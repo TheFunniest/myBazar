@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import styles from "./sections.module.css";
 
 import { ReactComponent as NextArrow } from "../../assets/images/searchItemArrw.svg";

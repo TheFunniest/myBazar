@@ -1,22 +1,22 @@
 .carousel {
-    margin-top: -35px;
-    margin-left: -20px;
-    margin-right: -20px;
-    position: relative;
-    overflow: hidden;
+  margin-top: -35px;
+  margin-left: -20px;
+  margin-right: -20px;
+  position: relative;
+  overflow: hidden;
 }
 
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: -15px;
+  margin-bottom: 30px;
+}
 
-
-
-.carousel>div {
-  border-left: 1px solid rgb(223, 228, 234);
-  border-right: 1px solid rgb(223, 228, 234);
+.carousel > div {
   margin: 20px 20px 25px 20px;
   overflow: visible;
 }
-
-
 
 .product {
   border-width: 1px;
@@ -30,12 +30,10 @@
 }
 
 .product:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 9px 0px rgba(47, 53, 66, 0.3);
-    /* border: none; */
+  transform: scale(1.05);
+  box-shadow: 0px 4px 9px 0px rgba(47, 53, 66, 0.3);
+  /* border: none; */
 }
-
-
 
 .Arrow {
   outline: none;
@@ -56,15 +54,17 @@
 .prevArrow {
   top: 47%;
   left: 3.1%;
+  background-color: rgba(164, 180, 226, 0.6);
 }
 
 .nextArrow {
   right: 3.1%;
   top: 47%;
   transform: translateY(-50%) rotate(180deg);
+  background-color: rgba(0, 66, 255, 0.6);
 }
 
-.Arrow>svg {
+.Arrow > svg {
   height: 60%;
   margin-left: -4px;
 }
@@ -74,10 +74,9 @@
   position: relative;
 }
 
-.productImg>img {
+.productImg > img {
   width: 100%;
 }
-
 
 .new {
   position: absolute;
